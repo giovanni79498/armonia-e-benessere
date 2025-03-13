@@ -11,3 +11,14 @@ header {
     padding: 20px 0;
     text-align: center;
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const serviceItems = document.querySelectorAll('.service-item');
+    serviceItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.style.backgroundColor = '#f0f0f0';
+        });
+        item.addEventListener('mouseleave', () => {
+            item.style.backgroundColor = 'white';
+        });
+    });
+});
